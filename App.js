@@ -31,6 +31,8 @@ const createScreenOptions = ({ route }) => {
       <Ionicons name={iconName} size={size} color={color} />
     ),
     headerShown: false,
+    tabBarActiveTintColor: theme.colors.brand.primary,
+    tabBarInactiveTintColor: theme.colors.ui.secondary,
   };
 };
 
@@ -51,13 +53,7 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <NavigationContainer>
-          <Tab.Navigator
-            screenOptions={createScreenOptions}
-            tabBarOptions={{
-              activeTintColor: theme.colors.brand.primary,
-              inactiveTintColor: theme.colors.ui.secondary,
-            }}
-          >
+          <Tab.Navigator screenOptions={createScreenOptions}>
             <Tab.Screen name="Restaurants" component={RestaurantScreen} />
             <Tab.Screen name="Map" component={MapScreen} />
             <Tab.Screen name="Settings" component={SettingsScreen} />
