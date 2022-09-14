@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { FlatList, TouchableOpacity } from "react-native";
 import { ActivityIndicator, Colors } from "react-native-paper";
+
 import { SafeArea } from "../../../components/utils/safe-area.component";
 import { Search } from "../components/search.component";
-
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
 
