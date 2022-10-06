@@ -1,5 +1,5 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export const loginRequest = (email, password) => {
-  signInWithEmailAndPassword(getAuth(), "hochphilipp@web.de", "test123");
+  return signInWithEmailAndPassword(getAuth(), email, password);
 };
