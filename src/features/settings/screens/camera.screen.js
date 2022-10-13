@@ -23,7 +23,6 @@ export const CameraScreen = ({ navigation }) => {
   const cameraRef = useRef();
 
   const snap = async () => {
-    console.log("snap");
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       AsyncStorage.setItem(`${user.uid}-photo`, photo.uri);
