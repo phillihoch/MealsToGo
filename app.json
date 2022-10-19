@@ -14,15 +14,19 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.phillihoch.MealsToGo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo_wstd.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.phillihoch.MealsToGo"
     }
   }
 }
